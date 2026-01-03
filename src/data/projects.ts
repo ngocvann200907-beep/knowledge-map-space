@@ -1,3 +1,9 @@
+import googleDriveImg from "@/assets/evidence/google-drive.jpeg";
+import googleDocsReportImg from "@/assets/evidence/google-docs-report.jpeg";
+import trelloProgressImg from "@/assets/evidence/trello-progress.jpeg";
+import trelloFinalImg from "@/assets/evidence/trello-final.jpeg";
+import microsoftTeamsImg from "@/assets/evidence/microsoft-teams.jpeg";
+
 export interface ProjectImage {
   src: string;
   caption: string;
@@ -39,7 +45,7 @@ export const projects: Project[] = [
     results:
       "Hệ thống thư mục gọn gàng, dễ tìm kiếm tài liệu, tiết kiệm thời gian 30% khi làm bài tập.",
     images: [
-      { src: "/src/assets/evidence/google-drive.jpeg", caption: "Tạo thư mục trên Google Drive để lưu trữ tài liệu" },
+      { src: googleDriveImg, caption: "Tạo thư mục trên Google Drive để lưu trữ tài liệu" },
     ],
   },
   {
@@ -62,7 +68,7 @@ export const projects: Project[] = [
     results:
       "Thu thập được 15+ tài liệu chất lượng cao, xây dựng được thư viện tham khảo cá nhân.",
     images: [
-      { src: "/src/assets/evidence/google-docs-report.jpeg", caption: "Báo cáo nghiên cứu khoa học trên Google Docs" },
+      { src: googleDocsReportImg, caption: "Báo cáo nghiên cứu khoa học trên Google Docs" },
     ],
   },
   {
@@ -84,10 +90,6 @@ export const projects: Project[] = [
       "Prompt quá dài có thể gây confusion cho AI. Cần cân bằng giữa chi tiết và súc tích.",
     results:
       "Output từ prompt cải tiến rõ ràng hơn 80%, có cấu trúc và phù hợp với mục đích học tập.",
-    images: [
-      { src: "/placeholder.svg", caption: "Prompt v1 đơn giản" },
-      { src: "/placeholder.svg", caption: "Prompt v2 cải tiến và kết quả" },
-    ],
   },
   {
     id: "online-collaboration",
@@ -109,9 +111,9 @@ export const projects: Project[] = [
     results:
       "Hoàn thành dự án đúng hạn, tất cả thành viên nắm rõ tiến độ và trách nhiệm của mình.",
     images: [
-      { src: "/src/assets/evidence/trello-progress.jpeg", caption: "Tiến độ làm việc trên Trello" },
-      { src: "/src/assets/evidence/trello-final.jpeg", caption: "Bản Final hoàn thiện trên Trello" },
-      { src: "/src/assets/evidence/microsoft-teams.jpeg", caption: "Giao tiếp nhóm qua Microsoft Teams" },
+      { src: trelloProgressImg, caption: "Tiến độ làm việc trên Trello" },
+      { src: trelloFinalImg, caption: "Bản Final hoàn thiện trên Trello" },
+      { src: microsoftTeamsImg, caption: "Giao tiếp nhóm qua Microsoft Teams" },
     ],
   },
   {
@@ -133,10 +135,6 @@ export const projects: Project[] = [
       "AI-generated content cần được fact-check và personalize để phù hợp với mục đích cụ thể.",
     results:
       "Video hoàn chỉnh với chất lượng chuyên nghiệp, tiết kiệm 60% thời gian so với làm thủ công.",
-    images: [
-      { src: "/placeholder.svg", caption: "Kịch bản video từ ChatGPT" },
-      { src: "/placeholder.svg", caption: "Video hoàn chỉnh trên Canva" },
-    ],
   },
   {
     id: "responsible-ai",
@@ -157,9 +155,5 @@ export const projects: Project[] = [
       "Ranh giới giữa hỗ trợ học tập và gian lận còn mờ nhạt. Cần định nghĩa rõ ràng từng trường hợp.",
     results:
       "Bộ 7 nguyên tắc sử dụng AI có trách nhiệm, được áp dụng trong suốt quá trình học tập.",
-    images: [
-      { src: "/placeholder.svg", caption: "Nghiên cứu chính sách AI của các trường" },
-      { src: "/placeholder.svg", caption: "Bộ 7 nguyên tắc sử dụng AI" },
-    ],
   },
 ];
